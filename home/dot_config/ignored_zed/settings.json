@@ -1,8 +1,35 @@
 {
+  "cli_default_open_behavior": "new_window",
+  "outline_panel": {
+    "dock": "left",
+  },
+  "collaboration_panel": {
+    "dock": "left",
+  },
+  "agent": {
+    "dock": "right",
+    "favorite_models": [],
+    "model_parameters": [],
+  },
+  "git_panel": {
+    "dock": "left",
+  },
+  "agent_servers": {
+    "opencode": {
+      "default_mode": "build",
+      "favorite_models": [
+        "opencode/minimax-m2.1-free",
+        "opencode/minimax-m2.5-free",
+        "opencode/mimo-v2-pro-free/high",
+      ],
+      "type": "registry",
+    },
+  },
   "base_keymap": "VSCode",
   "buffer_font_family": "JetBrainsMono Nerd Font Mono",
   "buffer_font_features": { "calt": true, "zero": true, "cv14": true },
   "buffer_font_size": 17.0,
+  "colorize_brackets": true,
   "current_line_highlight": "none",
   "cursor_blink": false,
   "format_on_save": "on",
@@ -11,10 +38,10 @@
   "languages": {
     "Haskell": { "tab_size": 2 },
     "Racket": {
-      "formatter": { "external": { "command": "raco", "arguments": ["fmt"] } }
+      "formatter": { "external": { "command": "raco", "arguments": ["fmt"] } },
     },
     "SQL": { "formatter": { "external": { "command": "format-postgres" } } },
-    "Typst": { "formatter": { "external": { "command": "typstyle" } } }
+    "Typst": { "formatter": { "external": { "command": "typstyle" } } },
   },
   "lsp": {
     "golangci-lint": {
@@ -23,28 +50,31 @@
           "golangci-lint",
           "run",
           "--show-stats=false",
-          "--output.json.path=stdout"
-        ]
-      }
+          "--output.json.path=stdout",
+        ],
+      },
     },
     "gopls": { "initialization_options": { "formatting.gofumpt": true } },
     "rust-analyzer": {
-      "initialization_options": { "rustfmt": { "extraArgs": ["+nightly"] } }
-    }
+      // "initialization_options": { "rustfmt": { "extraArgs": ["+nightly"] } },
+    },
   },
   "project_panel": { "auto_fold_dirs": false, "dock": "right" },
   "show_edit_predictions": false,
   "tab_bar": { "show_nav_history_buttons": false },
   "telemetry": { "diagnostics": false, "metrics": false },
   "theme": {
-    "dark": "Catppuccin Macchiato",
+    "dark": "Catppuccin Mocha - No Italics",
     "light": "Catppuccin Latte",
-    "mode": "system"
+    "mode": "system",
   },
   "ui_font_family": "Wix Madefor Display",
   "vim": {
     "toggle_relative_line_numbers": true,
-    "use_system_clipboard": "on_yank"
+    "use_system_clipboard": "on_yank",
   },
-  "vim_mode": true
+  "vim_mode": false,
+  "helix_mode": true,
+  "which_key": { "enabled": true, "delay_ms": 0 },
+  "soft_wrap": "none",
 }
