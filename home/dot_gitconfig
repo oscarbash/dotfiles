@@ -2,7 +2,7 @@
 	defaultBranch = main
 [user]
 	email = asqarslanov@gmail.com
-	name = Asqar Arslanov
+	name = Oscar <asqar-arslanov />
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
