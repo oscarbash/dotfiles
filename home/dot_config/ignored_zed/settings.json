@@ -58,7 +58,11 @@
     "rust-analyzer": {
       // "initialization_options": { "rustfmt": { "extraArgs": ["+nightly"] } },
     },
-    "texlab": { "settings": { "texlab": { "build": { "onSave": false } } } },
+    "texlab": {
+      "settings": {
+        "texlab": { "latexFormatter": "tex-fmt", "build": { "onSave": false } },
+      },
+    },
   },
   "project_panel": { "auto_fold_dirs": false, "dock": "left" },
   "show_edit_predictions": false,
