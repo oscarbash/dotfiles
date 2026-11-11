@@ -37,6 +37,11 @@
   "icon_theme": "Material Icon Theme",
   "languages": {
     "Haskell": { "tab_size": 2 },
+    "LaTeX": {
+      "formatter": {
+        "external": { "command": "tex-fmt", "arguments": ["--stdin"] },
+      },
+    },
     "Racket": {
       "formatter": { "external": { "command": "raco", "arguments": ["fmt"] } },
     },
@@ -58,11 +63,7 @@
     "rust-analyzer": {
       // "initialization_options": { "rustfmt": { "extraArgs": ["+nightly"] } },
     },
-    "texlab": {
-      "settings": {
-        "texlab": { "latexFormatter": "tex-fmt", "build": { "onSave": false } },
-      },
-    },
+    "texlab": { "settings": { "texlab": { "build": { "onSave": false } } } },
   },
   "project_panel": { "auto_fold_dirs": false, "dock": "left" },
   "show_edit_predictions": false,
