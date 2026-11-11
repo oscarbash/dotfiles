@@ -36,6 +36,11 @@
   "git": { "inline_blame": { "enabled": false } },
   "icon_theme": "Material Icon Theme",
   "languages": {
+    "BibTeX": {
+      "formatter": {
+        "external": { "command": "tex-fmt", "arguments": ["--stdin"] },
+      },
+    },
     "Haskell": { "tab_size": 2 },
     "LaTeX": {
       "formatter": {
