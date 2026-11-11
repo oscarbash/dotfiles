@@ -6,6 +6,7 @@
   "collaboration_panel": {
     "dock": "left",
   },
+  "cursor_animation": { "enabled": true },
   "agent": {
     "dock": "right",
     "favorite_models": [],
